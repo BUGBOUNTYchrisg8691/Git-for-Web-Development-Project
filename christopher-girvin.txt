@@ -1,0 +1,160 @@
+﻿link to codepen: https://codepen.io/bugbountychrisg8691/pen/QWNqWJN?editors=1100
+
+1. What is Semantic HTML? 
+HTML that gives meaning to the webpage instead of just presentation, i.e. when an HTML tag represent to the user and the browser what the enclosed data is
+
+2. What is HTML used for? 
+HTML handles the basic formating for the text and images on a webpage, tells the browser how to display the data
+
+3. What is an attribute and where do we put it? 
+An attribute contains information about a tag and it is placed in the starting tag
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+An h1 tag is a "title" tag and once per page 
+
+5. Name two tags that have required attributes
+<a>, <img>
+
+6. What do we put in the head of our HTML document? 
+an html tag and a header tag and a title tag
+
+7. What is an id? 
+unique identifier
+
+8. What elements can I add an id to? 
+all but <base>, <head>, <html>, <meta>, <script>, <style>, <title>
+
+9. How many times can I use the same id on a page? 
+once
+
+10. What is a class? 
+identifier in a stylesheet
+
+11. What elements can I add a class to? 
+any
+
+12. How many times can I use the same class on a page? 
+infinite
+
+13. How do I get my link to open in a new tab?
+href="_blank"
+
+14. What is the alt attribute in the image tag used for? 
+alternative text for image
+
+15. How do I reference an id?
+#<id>
+
+16. What is the difference between a section and a div
+section is symantic and a grouping of content, div is not symantic without specifying a descriptive class. In simpler terms, a section is a container made up of divs as subcontainers.
+
+17. What is CSS used for? 
+styling
+
+18. How to we select an element? Example - every h2 on the page
+h2{
+	...;
+}
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+class is used to style similar objects together, and id is a unique identifier to be styled alone
+
+20. How do we select classes in CSS?
+.<class>
+
+21. How do we select a p element with a single class of “human””?
+p.human{
+	...;
+}
+
+22. What is a parent child selector? When would this be useful? 
+used to select all elements that are a part of a larger element; if you needed to select all <h2> elements of a <div>
+
+23. How do you select all links within a div with the class of sidebar?
+.sidebar div{
+	...;
+}
+
+24. What is a pseudo selector?
+represents the state of an element
+
+25. What do we use the change the spacing between lines?
+line-height
+
+26. What do we use to change the spacing between letters?
+letter-spacing
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform:uppercase; text-transform:lowercase; text-transform:capitalize
+
+28. How do I add a 1px border around my div that is dotted and black?
+div{
+	border:1px dotted black;
+}
+
+29. How do I select everything on the page? 
+*{
+	...;
+}
+
+30. How do I write a comment in CSS?
+// for single line
+/*...*/ for multiline
+
+31. How do I find out what file I am in, when I am using the command line? 
+pwd in powershell and linux terminal
+cd in command prompt
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm in powershell and linux terminal
+del in command prompt; because there is no verification prompt it's just gone and not in your recycling bin, either
+
+34. Why should I use version control? 
+because it saves your work remotely, it helps when working with teams, 
+
+35. How often should I commit to github?
+once every 20 minutes or whenever you get a major feature working
+
+36. What is the command we would use to push our repo up to github? 
+first time - git push -u origin <branch>
+other - git push origin <branch>
+
+37. Walk me through Lambda's git flow. 
+fork
+add TL as collaborator
+clone - git clone <url>
+branch - git checkout -b '<name>'
+do your work
+add work to git staging - git add <files>
+give commit some info - git commit -m '<info>'
+add commit to repo - git push -u origin <branch>
+submit pull request
+
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+inline elements can have elements to left and right and respect their margins and padding, but not top and bottom and cannot have width or height attributes
+block elements respect margins and padding of all surrounds elements, force a break after, and uses width of page if not specified 
+
+
+2. What happens when an element is positioned absolutely? 
+it is placed via coordinates of its' parent's location, if no parent then the top left of the page
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+...{
+	display:inline-block;
+	width:...;
+}
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+block - <div>, <section>, <footer>
+inline - <i>, <a>
+inline-block - <button>
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+
+
